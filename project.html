@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project - Reksa</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: sans-serif; }
+
+    nav {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1rem 2rem;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+    }
+    nav .logo { font-size: 18px; font-weight: 600; color: white; text-decoration: none; }
+    nav a { text-decoration: none; color: rgba(255,255,255,0.8); margin-left: 1.5rem; font-size: 14px; }
+
+    .header {
+      text-align: center; padding: 4rem 2rem;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+      color: white;
+    }
+    .header h1 { font-size: 36px; margin-bottom: 0.5rem; }
+    .header p { font-size: 16px; opacity: 0.9; }
+
+    .projects { padding: 3rem 2rem; max-width: 800px; margin: 0 auto; }
+    .projects-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .project-card {
+      border-radius: 12px; padding: 1.5rem;
+      color: white; position: relative; overflow: hidden;
+    }
+    .pc1 { background: linear-gradient(135deg, #667eea, #764ba2); }
+    .pc2 { background: linear-gradient(135deg, #f093fb, #f5576c); }
+    .pc3 { background: linear-gradient(135deg, #43e97b, #38f9d7); color: #1a6b3a; }
+    .pc4 { background: linear-gradient(135deg, #f5a623, #f53703); }
+    .pc5 { background: linear-gradient(135deg, #4facfe, #00f2fe); color: #1a4b6b; }
+    .pc6 { background: linear-gradient(135deg, #a18cd1, #fbc2eb); color: #4a2b6b; }
+
+    .project-card h3 { font-size: 16px; margin-bottom: 8px; }
+    .project-card p { font-size: 13px; opacity: 0.85; line-height: 1.6; margin-bottom: 12px; }
+    .tag {
+      display: inline-block; font-size: 11px; padding: 3px 10px;
+      background: rgba(255,255,255,0.3); border-radius: 99px; margin-right: 4px;
+    }
+    .btn-link {
+      display: inline-block; margin-top: 12px;
+      padding: 6px 16px; border-radius: 99px;
+      background: rgba(255,255,255,0.25); color: inherit;
+      text-decoration: none; font-size: 12px;
+    }
+
+    footer { text-align: center; padding: 1.5rem; font-size: 13px; color: #aaa; border-top: 1px solid #eee; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="logo">reksa.dev</a>
+    <div>
+      <a href="index.html">home</a>
+      <a href="project.html">project</a>
+      <a href="#">kontak</a>
+    </div>
+  </nav>
+
+  <section class="header">
+    <h1>Project 🚀</h1>
+    <p>Kumpulan project yang pernah aku buat</p>
+  </section>
+
+  <section class="projects">
+    <div class="projects-grid">
+
+      <div class="project-card pc1">
+        <h3>Landing Page Cafe</h3>
+        <p>Halaman promosi kafe dengan tampilan modern dan responsif</p>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <br>
+        <a href="#" class="btn-link">lihat project</a>
+      </div>
+
+      <div class="project-card pc2">
+        <h3>Kalkulator</h3>
+        <p>Kalkulator sederhana dengan JavaScript</p>
+        <span class="tag">JavaScript</span>
+        <br>
+        <a href="#" class="btn-link">lihat project</a>
+      </div>
+
+      <div class="project-card pc3">
+        <h3>Todo App</h3>
+        <p>Aplikasi catatan harian berbasis web</p>
+        <span class="tag">JS</span>
+        <span class="tag">CSS</span>
+        <br>
+        <a href="#" class="btn-link">lihat project</a>
+      </div>
+
+      <div class="project-card pc4">
+        <h3>Portfolio</h3>
+        <p>Website portfolio pribadi ini</p>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <br>
+        <a href="#" class="btn-link">lihat project</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>© 2025 reksa.dev</footer>
+
+</body>
+</html>
